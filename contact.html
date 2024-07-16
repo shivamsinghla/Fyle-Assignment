@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+    
+        }
+        .form-container {
+            background-color: #f7f7f8;
+            padding: 20px;
+            border: 1px solid brown;
+            border-radius: 10px;
+            width: 300px;
+            
+        }
+        .form-container h2 {
+            margin-top: 0;
+        }
+        .form-container input[type="text"], 
+        .form-container input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-container input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .form-container label {
+           
+            font-size: 14px;
+        }
+        .form-container form{
+            margin-right: 20px;
+        }
+        .form-container .btn {
+            margin-top: 5px;
+            background-color: #ff0077;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+            cursor: pointer;
+        }
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            width: 100%;
+            position: absolute;
+            top: 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 20px 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+    <div class="container">
+        <div class="form-container">
+            <h2>Talk to us</h2>
+            <form>
+                <input type="email" name="email" placeholder="Work email*" required>
+                <input type="text" name="first-name" placeholder="First name*" required>
+                <input type="text" name="last-name" placeholder="Last name*" required>
+                <label>
+                    <input type="checkbox" required>
+                    I agree to Fyle's terms and conditions, and provide consent to send me communication.
+                </label>
+                <button type="submit" class="btn">Contact Us</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
